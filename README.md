@@ -4,4 +4,4 @@ Sistema escolar para evaluación 2 de arquitectura de software que contiene patr
 ## Autores
 - Sergio Rubén Loredo Figueroa
 - [Brayan Mares Bueno](https://github.com/Brayan008)
-- [Perez Magallon Jorge Etzel] (https://github.com/JorgeMagallon)
+- [Perez Magallon Jorge Etzel](https://github.com/JorgeMagallon)
