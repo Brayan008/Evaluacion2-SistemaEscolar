@@ -37,8 +37,6 @@
             "type"     : "get",
             success: (data) => {
                 if(data !== null){
-                    mierda = data;
-
                     data.map((grupo,index)=>{
                         document.getElementById('contenido').innerHTML +=`            <tr>
                 <td>${grupo.nombre_grupo}</td>

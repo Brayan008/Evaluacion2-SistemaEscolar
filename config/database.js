@@ -8,7 +8,7 @@ const MONGODB_DATABASE = process.env.DB_NAME;
 const MONGODB_ATLAS = 'mongodb+srv://Brayan:7TxzeZCNp1GHMfTr@cluster0.vrjgf.mongodb.net/SistemaEscolar?retryWrites=true&w=majority';
 const MONGODB_LOCAL = 'mongodb://' + MONGODB_HOST + ":" + MONGODB_PORT + "/" + MONGODB_DATABASE;
 
-module.exports = async () => {
+const conexionDB = async () => {
     var uri = MONGODB_ATLAS;
     var option = { //Solo se usa si es local y se agrega a el connect
         dbName: MONGODB_DATABASE,
@@ -31,4 +31,8 @@ module.exports = async () => {
         console.error("Error conectando a la BD" + uri, $err);
         return;
     })
+}
+
+module.exports = {
+    conexionDB
 }

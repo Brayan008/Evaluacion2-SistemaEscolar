@@ -25,7 +25,7 @@ app.use(session({
 }));
 //Se establece conexion con la base de datos
 var mongoose = require('./config/database');
-mongoose();
+mongoose.conexionDB();
 
 
 // view engine setup
